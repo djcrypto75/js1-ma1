@@ -1,15 +1,9 @@
 // question 1
 const cat = {
-   name: "Pusur",
-   age: 12,
-   dangerous: true,
-
-   // bark is a property with a function as its value
    complain: function() {
-      console.log("Meow");
+      console.log("Meow!");
    }
 };
-cat.complain();
 
 // question 2
 const heading = document.querySelector("h3");
@@ -43,10 +37,13 @@ function catNames(catArray) {
    for (let i = 0; i < catArray.length; i++) {
       catHTML += `<h5>${catArray[i].name}</h5>`;
    }
+   console.log(catHTML);
+
    return catHTML;
 }
 
 // question 9
+resultsContainer.innerHTML = catNames(cats);
 
 // question 10
 const container = document.querySelector(".container");
